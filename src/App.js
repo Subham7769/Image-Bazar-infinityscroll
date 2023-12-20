@@ -16,7 +16,7 @@ function App() {
         setPage(page=>1);
       }
         const BASE_URL = 'https://api.unsplash.com';
-        const API_KEY = 'F5Qv_QyYt0qrDNyN99pl5GOv__IBrT5cOXfunbCXrDg';
+        const API_KEY = `${process.env.REACT_APP_UNSLASH_ACEESS_KEY}`;
         const END_POINT = '/search/photos';
         try{
             setLoading(true);
